@@ -14,9 +14,9 @@
     "3000": { "label": "backend (Node)" },
     "4200": { "label": "frontend (Angular)" }
   },
-  // Gemini CLI е незадължителна алтернатива на Copilot Chat (виж README)
+  // Gemini CLI е основният агент (безплатен лимит ≈1000 заявки/ден); Copilot Chat е алтернатива
   "postCreateCommand": "npm install -g @google/gemini-cli",
-  "postAttachCommand": "echo 'Workspace ready. Open ex1/README.md. Agent: Copilot Chat (sidebar) or type: gemini'",
+  "postAttachCommand": "echo 'Workspace ready. Open ex1/README.md. Start the agent with: gemini  (or Copilot Chat in the sidebar)'",
   "customizations": {
     "vscode": {
       "extensions": ["GitHub.copilot-chat", "ms-vscode.live-server"],
