@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontend ↔ Backend Demo</title>
+  <style>
+    body   { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; }
+    button { padding: 8px 14px; cursor: pointer; }
+    #joke  { margin-top: 20px; padding: 12px; border: 1px dashed #888; min-height: 2em; }
+    .error { border-color: #c00; color: #c00; }
+  </style>
+</head>
+<body>
+  <!-- TODO (Задача A1): добавете името си в заглавието -->
+  <header>
+    <h1>Frontend ↔ Backend Communication</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>The browser (frontend) sends an HTTP GET request to a public API (backend) and renders the JSON it receives.</p>
+      <button id="btn">Get Joke</button>
+      <article id="joke"></article>
+      <!-- TODO (Задача A2): изображение + линк към API документацията -->
+    </section>
+  </main>
+
+  <!-- TODO (Задача A3): footer с година -->
+
+  <script>
+    // Frontend: този код се изпълнява в браузъра.
+    // Backend:  https://api.chucknorris.io — отдалечен сървър, който връща JSON.
+    const API_URL = "https://api.chucknorris.io/jokes/random";
+    const out = document.getElementById("joke");
+    const btn = document.getElementById("btn");
+
+    btn.addEventListener("click", async () => {
+      out.textContent = "Loading...";
+      const response = await fetch(API_URL);   // HTTP GET → чака отговор (Promise)
+      const data = await response.json();      // тялото на отговора: текст → JS обект
+      out.textContent = data.value;            // полето "value" от JSON-а
+    });
+
+    // TODO (Задача B): този код няма обработка на грешки.
+    // Какво се случва, ако API_URL е грешен? Ако няма мрежа? Ако сървърът върне 500?
+  </script>
+</body>
+</html>

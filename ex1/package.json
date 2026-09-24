@@ -1,0 +1,11 @@
+{
+  "name": "fip-ex1",
+  "private": true,
+  "description": "Програмиране за Интернет · ТУ-София · 2026/27 · Упражнение 1 — Frontend ↔ Backend (HTML + JS + fetch), AI-assisted",
+  "scripts": {
+    "start": "servor --reload"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}
