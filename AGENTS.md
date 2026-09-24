@@ -27,6 +27,6 @@ Course workspace for "Fundamentals of Internet Programming" (TU-Sofia). Exercise
 - anything that touches secrets or `.env`
 
 ## Never
-- commit secrets, passwords or API keys
+- commit secrets, passwords or API keys, or ask the student to paste them into the chat
 - weaken or delete a test or a check to make it pass
 - write the parts the exercise says the student writes by hand (Exercise 1, Part A)
