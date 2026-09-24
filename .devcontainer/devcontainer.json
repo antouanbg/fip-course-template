@@ -1,0 +1,32 @@
+{
+  // Fundamentals of Internet Programming (ТУ-София, 4 курс) — работно пространство.
+  // Отваря се в GitHub Codespaces: нищо не се инсталира на лаптопа ви.
+  "name": "FIP course workspace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  // 2 ядра стигат и харчат безплатната квота най-бавно
+  "hostRequirements": { "cpus": 2 },
+  "forwardPorts": [8080, 3000, 4200],
+  "portsAttributes": {
+    "8080": { "label": "ex1 static page (npm start)" },
+    "3000": { "label": "backend (Node)" },
+    "4200": { "label": "frontend (Angular)" }
+  },
+  // Gemini CLI е незадължителна алтернатива на Copilot Chat (виж README)
+  "postCreateCommand": "npm install -g @google/gemini-cli",
+  "postAttachCommand": "echo 'Workspace ready. Open ex1/README.md. Agent: Copilot Chat (sidebar) or type: gemini'",
+  "customizations": {
+    "vscode": {
+      "extensions": ["GitHub.copilot-chat", "ms-vscode.live-server"],
+      "settings": {
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnSave": false
+      }
+    },
+    "codespaces": {
+      "openFiles": ["README.md", "ex1/README.md"]
+    }
+  }
+}
