@@ -1,0 +1,8 @@
+# Usage
+
+Един ред на сесия с агент. Gemini CLI: `/stats` преди изход → input/output tokens. Copilot: показва credits/заявки — пишете ги в колоната Credits. Уеб чат (Claude/ChatGPT): пишете броя prompt-ове в Credits и оставете токените празни. Безплатният план не струва нищо — записвайте колко **би струвала** сесията по публичния ценоразпис на доставчика; под таблицата отбележете кой ценоразпис ползвате.
+
+| Date | Tool | Input tokens | Output tokens | Credits / prompts (if no tokens) | List-price cost |
+|---|---|---|---|---|---|
+
+Price list used:
