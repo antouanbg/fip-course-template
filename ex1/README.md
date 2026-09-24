@@ -4,7 +4,7 @@
 |---|---|
 | **Технологии** | HTML, vanilla JavaScript (`fetch`, `async/await`), JSON, HTTP |
 | **Среда** | Codespaces: `cd ex1 && npm start` → порт 8080 (или десен клик на `index.html` → *Open with Live Server*) |
-| **AI агент** | Copilot Chat / Gemini CLI / уеб чат — виж [README](../README.md) и [PROMPTS.md](PROMPTS.md) |
+| **AI агент** | Gemini CLI (`gemini` в терминала) / Copilot Chat / уеб чат — виж [README](../README.md) и [PROMPTS.md](PROMPTS.md) |
 | **Време** | 90 мин · **Self-check:** `node checks/ex1.mjs` · **Предаване:** `git tag ex1 && git push origin ex1` |
 
 ## Цел

@@ -1,6 +1,6 @@
 # PROMPTS.md — Как се работи с AI агент в този курс
 
-В Codespaces: **Copilot Chat** (панелът вдясно) или **Gemini CLI** (`gemini` в терминала). Извън тях: **Claude** / **ChatGPT** уеб чат с copy-paste. Инструментът не е важен — важен е начинът на работа. Агентът в Codespaces чете `AGENTS.md` сам; в уеб чат го paste-вате заедно с файла.
+В Codespaces: **Gemini CLI** (`gemini` в терминала — препоръчително) или **Copilot Chat** (панелът вдясно). Извън тях: **Claude** / **ChatGPT** уеб чат с copy-paste. Инструментът не е важен — важен е начинът на работа. Агентът в Codespaces чете `AGENTS.md` сам; в уеб чат го paste-вате заедно с файла.
 
 ---
 
